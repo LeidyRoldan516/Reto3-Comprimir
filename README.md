@@ -14,7 +14,7 @@ Objetivo tecnico:
 - Reducir llamadas al kernel (syscalls write).
 - Demostrar con evidencia real de strace, time y valgrind.
 
-## Matriz de Diseno del Pipeline I/O
+## Matriz de Diseño del Pipeline I/O
 
 Diagrama de flujo del paso de datos:
 
