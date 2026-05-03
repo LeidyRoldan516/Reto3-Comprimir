@@ -1,0 +1,18 @@
+# Build artifacts
+editor/bin/
+*.o
+
+# Generated profiling/log files
+editor/benchmark_*.txt
+editor/strace_*.txt
+
+# Generated samples/results
+editor/samples/*.huff
+editor/samples/*.dec.txt
+editor/samples/baseline_out.txt
+editor/samples/test_50mb.txt
+!editor/samples/test.txt
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
