@@ -103,18 +103,24 @@ Con strace -c (50MB):
 - write: 6665 llamadas
 - total syscalls: 6713
 
+<img width="921" height="526" alt="image" src="https://github.com/user-attachments/assets/8f73b541-c1e8-4a90-8746-a35ae619c2d7" />
+
 Con /usr/bin/time -v (50MB):
 
 - User time (seconds): 0.34
 - System time (seconds): 0.23
 - Elapsed (wall clock): 0:00.95
 - Maximum resident set size (kbytes): 105600
+  
+<img width="921" height="505" alt="image" src="https://github.com/user-attachments/assets/18d406a8-f480-4498-afc8-dec531bb2f7d" />
 
 Con valgrind:
 
 - total heap usage: 80 allocs, 80 frees
 - no leaks are possible
 - ERROR SUMMARY: 0 errors
+
+<img width="921" height="336" alt="image" src="https://github.com/user-attachments/assets/7a87318f-ea99-473d-834c-3f81b3c2861c" />
 
 ### Tabla de benchmark (real)
 
