@@ -130,7 +130,6 @@ Con valgrind:
 
 Compilar:
 
-    cd editor
     make clean
     make
 

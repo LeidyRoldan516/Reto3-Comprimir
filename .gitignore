@@ -1,17 +1,17 @@
 # Build artifacts
-editor/bin/
+bin/
 *.o
 
 # Generated profiling/log files
-editor/benchmark_*.txt
-editor/strace_*.txt
+benchmark_*.txt
+strace_*.txt
 
 # Generated samples/results
-editor/samples/*.huff
-editor/samples/*.dec.txt
-editor/samples/baseline_out.txt
-editor/samples/test_50mb.txt
-!editor/samples/test.txt
+samples/*.huff
+samples/*.dec.txt
+samples/baseline_out.txt
+samples/test_50mb.txt
+!samples/test.txt
 
 # OS/editor junk
 .DS_Store
