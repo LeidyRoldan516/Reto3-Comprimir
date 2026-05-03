@@ -36,6 +36,9 @@ Flujo inverso al abrir .huff:
            -> texto plano en memoria
            -> edicion normal
 
+<img width="1156" height="2468" alt="Matriz de Diseño del Pipeline I_O_ drawio (1)" src="https://github.com/user-attachments/assets/023f3c1e-823c-4b24-9115-a1b5f9d4bafe" />
+
+
 ## Gestion de Memoria en C (struct, padding, ciclo de vida)
 
 El proyecto usa memoria dinamica de forma controlada para el arbol Huffman, los buffers de entrada y las tablas auxiliares. La idea es reservar solo lo necesario durante la ejecucion y liberar todo al finalizar cada operacion.
@@ -103,18 +106,27 @@ Con strace -c (50MB):
 - write: 6665 llamadas
 - total syscalls: 6713
 
+<img width="921" height="526" alt="image" src="https://github.com/user-attachments/assets/fa6cef2f-ec5a-4b50-836b-cdd66435cbd1" />
+
+
 Con /usr/bin/time -v (50MB):
 
 - User time (seconds): 0.34
 - System time (seconds): 0.23
 - Elapsed (wall clock): 0:00.95
 - Maximum resident set size (kbytes): 105600
+
+<img width="921" height="505" alt="image" src="https://github.com/user-attachments/assets/5b84472f-fe20-4ae6-abc9-aa2a2809e39a" />
+
   
 Con valgrind:
 
 - total heap usage: 80 allocs, 80 frees
 - no leaks are possible
 - ERROR SUMMARY: 0 errors
+
+<img width="921" height="336" alt="image" src="https://github.com/user-attachments/assets/9879b079-031d-4dc4-9cb9-746b2310c83d" />
+
 
 ### Tabla de benchmark (real)
 
